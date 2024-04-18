@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+
+.topWrapper {
+  display: flex;
+  overflow: hidden;
+  padding-left: 1%;
+  padding-right: 1%;
+  justify-content: center;
+}
+
+.topBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: green;
+}
+
+.logo {
+  background-color: orange;
+}
+
+.navBar {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.navLink a:link, .navLink a:visited, .navLink a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.navLink a:hover {
+  text-decoration: underline;
+  transition: 2s text-decoration;
+}
