@@ -1,11 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-
+  margin: 0;
 }
 
+
+p, h1, h2, h3, h4 , .navLink a{
+  font-family: "Figtree", sans-serif;
+/*  font-optical-sizing: auto;*/
+/*  font-weight: <weight>;*/
+  font-style: normal;
+}
+
+p {
+  font-size: 18pt;
+}
+
+h2 {
+  font-size: 24pt;
+}
+/*=============================================================================*/
 
 .topWrapper {
   display: flex;
@@ -13,6 +31,7 @@ body {
   padding-left: 1%;
   padding-right: 1%;
   justify-content: center;
+  margin-top: 2vh;
 }
 
 .topBar {
@@ -20,18 +39,19 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  background-color: green;
+  height: 10%;
+  align-items: center;
 }
 
-.logo {
-  background-color: orange;
+.logo img{
+  width: 10%;
 }
 
 .navBar {
   display: flex;
   width: 50%;
   justify-content: space-between;
-  background-color: yellow;
+  font-size: 20pt;
 }
 
 .navLink a:link, .navLink a:visited, .navLink a:active {
@@ -42,4 +62,198 @@ body {
 .navLink a:hover {
   text-decoration: underline;
   transition: 2s text-decoration;
+}
+
+a:visited, a:active, a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:link {
+  text-decoration: underline;
+}
+/*=============================================================================*/
+
+
+
+.gifBg {
+  width: 100%;
+  height: 88vh;
+  background-size: 20%;
+}
+
+
+.landingTitle {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); /* center text */
+  text-align: center; 
+  z-index: 2; 
+  color: white; 
+  background-color: black;
+  padding: 0px 20px 10px 20px;
+}
+
+.landingTitle h1 {
+  font-size: 60px;
+  margin-bottom: 16px;
+}
+/*=============================================================================*/
+
+
+.intro {
+  margin: 5vh 2vw 5vh 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro img {
+  width: 30%;
+}
+
+.callToAction1 {
+  margin: 5vh 2vw 5vh 2vw;
+  display: flex;
+  justify-content: space-between;
+/*  border-style: solid;*/
+}
+
+.pageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-color: black;
+  width: 30vw;
+  padding: 10vw;
+}
+
+.pageBox img {
+  width: 10vw;
+  mix-blend-mode: difference;
+}
+
+/*=============================================================================*/
+
+.timelineContent h2{
+  margin: 5vh 2vw 5vh 2vw;
+}
+
+.timelineLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.timeline {
+  margin: 5vh 2vw 5vh 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; 
+  padding-bottom: 20px; 
+  padding-top: 20px;
+}
+
+.timeSection:nth-child(odd) {
+  background-color: white; /* for odd-numbered rows */
+}
+
+.timeSection:nth-child(even) {
+  background-color: black; /* for even-numbered rows */
+  color: white;
+}
+.timelineTxt, .timelineImg {
+  flex: 1; 
+  padding: 0 20px;
+  text-align: center;
+}
+
+.timelineTxt p {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.timelineImg img {
+  width: 30%;
+}
+/*=============================================================================*/
+
+/*.influencerProf img {
+  width: 20%;
+}*/
+
+
+.profileContent {
+  margin: 5vh 2vw 5vh 2vw;
+}
+
+.profileSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.influencerProf img, .consumerProf img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.influencerProf, .consumerProf {
+  border: 1px solid #ccc;
+  padding: 20px;
+  grid-column: span 1; 
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+}
+
+.influencerProf h3, .consumerProf h3 {
+  margin-top: 20px; 
+}
+
+
+.influencerProf h4 {
+  margin: 0;
+}
+
+
+
+
+
+
+
+/*=============================================================================*/
+
+
+.impactsContent {
+    padding: 20px;
+}
+
+.statistics {
+    margin-top: 20px;
+}
+
+.statistics p {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.statistics p:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
+
+.statistics p:nth-child(even) {
+    background-color: white;
+    color: black;
 }
