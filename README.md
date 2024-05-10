@@ -1,4 +1,4 @@
-# final-project
+# Influencer Culture
 
 LINK: https://nishmashakya.github.io/final-project/
 
